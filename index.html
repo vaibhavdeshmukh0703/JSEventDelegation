@@ -32,7 +32,7 @@
             parentNode.appendChild(h1);
             parentNode.addEventListener("click", (e) => {
                 console.log(e.target)
-                if (e.target && e.target.nodeName === 'LI') {
+                if (e.target && e.target.matches('child_list')') {
                     console.log("li pressed",e.target.textContent);
                    e.target.style.color = 'red'; 
                 }
